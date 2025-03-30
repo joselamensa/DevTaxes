@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - TaxBack | Devolución de Impuestos para Work & Travel</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="https://via.placeholder.com/150x50" alt="TaxBack Logo" id="logo">
+                    </a>
+                </div>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+                        <li class="nav-item"><a href="./servicios.html" class="nav-link">Servicios</a></li>
+                        <li class="nav-item"><a href="./servicios.html#calculator" class="nav-link">Calculá tu devolución</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-outline">Iniciar Sesión</a>
+                    <a href="registro.html" class="btn btn-primary">Registrarse</a>
+                </div>
+                
+                <button class="mobile-menu-toggle" aria-label="Abrir menú">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1 class="page-title">Contacto</h1>
+            <p class="page-description">Estamos aquí para ayudarte con cualquier duda sobre la devolución de tus impuestos</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-info-grid">
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="contact-title">Email</h3>
+                    <p class="contact-text">info@taxback.com</p>
+                    <p class="contact-text">soporte@taxback.com</p>
+                </div>
+                
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3 class="contact-title">Teléfono</h3>
+                    <p class="contact-text">+1 234 567 890</p>
+                    <p class="contact-text">Lun - Vie: 9:00 - 18:00</p>
+                </div>
+                
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3 class="contact-title">WhatsApp</h3>
+                    <p class="contact-text">+1 234 567 890</p>
+                    <p class="contact-text">Atención 24/7</p>
+                </div>
+                
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="contact-title">Oficina Central</h3>
+                    <p class="contact-text">Av. Principal 123</p>
+                    <p class="contact-text">Ciudad, País</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-form-container">
+                    <h2 class="section-title">Envíanos un mensaje</h2>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nombre completo</label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Tu nombre" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="tucorreo@ejemplo.com" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Asunto</label>
+                            <input type="text" id="subject" name="subject" class="form-control" placeholder="¿Sobre qué nos quieres contactar?" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="country">País donde trabajaste (opcional)</label>
+                            <select id="country" name="country" class="form-control">
+                                <option value="">Selecciona un país</option>
+                                <option value="usa">Estados Unidos</option>
+                                <option value="canada">Canadá</option>
+                                <option value="uk">Reino Unido</option>
+                                <option value="australia">Australia</option>
+                                <option value="other">Otro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" class="form-control" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        </div>
+                        
+                        <div class="form-group form-checkbox">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">Acepto la <a href="privacidad.html">política de privacidad</a> y el tratamiento de mis datos.</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">Enviar mensaje</button>
+                    </form>
+                </div>
+                
+                <div class="contact-image">
+                    <div class="contact-card">
+                        <h3 class="contact-card-title">¿Prefieres que te llamemos?</h3>
+                        <p class="contact-card-text">Déjanos tu número y te contactaremos lo antes posible.</p>
+                        
+                        <form id="callback-form" class="callback-form">
+                            <div class="form-group">
+                                <label for="phone">Número de teléfono</label>
+                                <input type="tel" id="phone" name="phone" class="form-control" placeholder="+1 234 567 890" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="best-time">Mejor horario para llamar</label>
+                                <select id="best-time" name="best-time" class="form-control">
+                                    <option value="morning">Mañana (9:00 - 12:00)</option>
+                                    <option value="afternoon">Tarde (12:00 - 17:00)</option>
+                                    <option value="evening">Noche (17:00 - 20:00)</option>
+                                </select>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-secondary btn-block">Solicitar llamada</button>
+                        </form>
+                        
+                        <div class="social-contact">
+                            <p>También puedes contactarnos a través de nuestras redes sociales:</p>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Nuestra ubicación</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.952912260219!2d3.375295414770757!3d6.5276316249594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMzEnMzkuNSJOIDPCsDIyJzMxLjEiRQ!5e0!3m2!1sen!2s!4v1627309374619!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Preguntas Frecuentes sobre Contacto</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cuál es el tiempo de respuesta a mis consultas?</h3>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nos comprometemos a responder todas las consultas en un plazo máximo de 24 horas hábiles. Para consultas urgentes, te recomendamos utilizar nuestro servicio de WhatsApp o llamar directamente a nuestro número de atención al cliente.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Puedo programar una consulta personalizada?</h3>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>¡Claro! Puedes solicitar una consulta personalizada con uno de nuestros expertos fiscales utilizando el formulario de "Solicitar llamada" en esta página. También puedes enviarnos un email para programar una videollamada si prefieres una atención más detallada.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Tienen oficinas en otros países?</h3>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Actualmente nuestra oficina central se encuentra en la dirección indicada, pero contamos con representantes en Estados Unidos, Canadá, Reino Unido y Australia. Nuestro servicio es principalmente digital, lo que nos permite atender clientes de cualquier parte del mundo sin necesidad de visitar una oficina física.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cómo puedo enviar mis documentos fiscales?</h3>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Una vez que te registres en nuestra plataforma, tendrás acceso a un portal seguro donde podrás subir todos tus documentos fiscales. Si tienes problemas para subir los archivos, puedes enviárnoslos por email a documentos@taxback.com o contactarnos para buscar una alternativa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Options -->
+    <section class="support-options">
+        <div class="container">
+            <h2 class="section-title">Canales de Soporte</h2>
+            <div class="support-grid">
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="support-title">Chat en Vivo</h3>
+                    <p class="support-description">Chatea con nuestros agentes de soporte en tiempo real para resolver tus dudas de forma inmediata.</p>
+                    <a href="#" class="btn btn-outline support-btn">Iniciar Chat</a>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="support-title">Centro de Ayuda</h3>
+                    <p class="support-description">Explora nuestra base de conocimientos con guías detalladas y tutoriales paso a paso.</p>
+                    <a href="#" class="btn btn-outline support-btn">Ver Recursos</a>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="support-title">Videollamada</h3>
+                    <p class="support-description">Agenda una videollamada con uno de nuestros expertos para una atención personalizada.</p>
+                    <a href="#" class="btn btn-outline support-btn">Agendar Cita</a>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="support-title">Asistente Virtual</h3>
+                    <p class="support-description">Nuestro asistente virtual está disponible 24/7 para responder preguntas frecuentes.</p>
+                    <a href="#" class="btn btn-outline support-btn">Hablar con Asistente</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">¿Listo para recuperar tu dinero?</h2>
+                <p class="cta-description">No pierdas más tiempo. Comienza el proceso ahora y recupera los impuestos que te corresponden.</p>
+                <a href="registro.html" class="btn btn-primary btn-lg">Comenzar Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="https://via.placeholder.com/150x50" alt="TaxBack Logo">
+                    <p class="footer-description">Especialistas en devolución de impuestos para programas Work & Travel.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-title">Enlaces Rápidos</h3>
+                    <ul class="footer-menu">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="como-funciona.html">Cómo Funciona</a></li>
+                        <li><a href="testimonios.html">Testimonios</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 class="footer-title">Contacto</h3>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-envelope"></i> info@taxback.com</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                        <li><i class="fab fa-whatsapp"></i> +1 234 567 890</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3 class="footer-title">Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 TaxBack. Todos los derechos reservados.</p>
+                <div class="footer-legal">
+                    <a href="privacidad.html">Política de Privacidad</a>
+                    <a href="terminos.html">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/contacto.js"></script>
+</body>
+</html>
