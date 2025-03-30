@@ -1,0 +1,478 @@
+/* Additional styles for Services page */
+
+/* Page Banner */
+.page-banner {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    padding: 120px 0 60px;
+    text-align: center;
+  }
+  
+  .page-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  .page-description {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  /* Services Overview */
+  .services-overview {
+    padding: 80px 0;
+  }
+  
+  .overview-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .overview-text {
+    flex: 1;
+  }
+  
+  .overview-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .overview-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  
+  .stat {
+    text-align: center;
+  }
+  
+  .stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+  }
+  
+  .stat-text {
+    color: var(--text-light);
+  }
+  
+  /* Service Features */
+  .service-features {
+    padding: 80px 0;
+    background-color: var(--background-alt);
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .feature-card {
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    padding: 30px;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .feature-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .feature-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .feature-description {
+    color: var(--text-light);
+  }
+  
+  /* Country Specific Services */
+  .country-services {
+    padding: 80px 0;
+  }
+  
+  .tabs {
+    margin-top: 40px;
+  }
+  
+  .tab-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .tab-btn {
+    padding: 12px 24px;
+    background-color: var(--background-alt);
+    border: none;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .tab-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .tab-pane {
+    display: none;
+  }
+  
+  .tab-pane.active {
+    display: block;
+  }
+  
+  .country-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+  }
+  
+  .country-info {
+    flex: 1;
+  }
+  
+  .country-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .country-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+  }
+  
+  .country-description {
+    margin-bottom: 30px;
+  }
+  
+  .documents-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .documents-list {
+    margin-bottom: 30px;
+  }
+  
+  .documents-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .documents-list i {
+    color: var(--primary-color);
+    margin-right: 10px;
+  }
+  
+  .country-cta {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  /* Service Packages */
+  .service-packages {
+    padding: 80px 0;
+    background-color: var(--background-alt);
+  }
+  
+  .packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .package-card {
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    position: relative;
+  }
+  
+  .package-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .package-card.featured {
+    border: 2px solid var(--primary-color);
+    transform: scale(1.05);
+  }
+  
+  .package-card.featured:hover {
+    transform: scale(1.05) translateY(-10px);
+  }
+  
+  .package-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-bottom-left-radius: var(--border-radius);
+  }
+  
+  .package-header {
+    padding: 30px;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .package-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  .package-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+  
+  .price-info {
+    color: var(--text-light);
+  }
+  
+  .package-body {
+    padding: 30px;
+  }
+  
+  .package-features li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .package-features i {
+    margin-right: 10px;
+  }
+  
+  .package-features .fa-check {
+    color: var(--success-color);
+  }
+  
+  .package-features .fa-times {
+    color: var(--error-color);
+  }
+  
+  .feature-disabled {
+    color: var(--text-light);
+  }
+  
+  .package-footer {
+    padding: 0 30px 30px;
+  }
+  
+  .btn-block {
+    display: block;
+    width: 100%;
+  }
+  
+  /* Tax Calculator */
+  .tax-calculator {
+    padding: 80px 0;
+  }
+  
+  .calculator-wrapper {
+    display: flex;
+    gap: 50px;
+    margin-top: 40px;
+  }
+  
+  .calculator-form {
+    flex: 1;
+    background-color: var(--background-alt);
+    padding: 30px;
+    border-radius: var(--border-radius);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-family: inherit;
+    font-size: 1rem;
+  }
+  
+  .calculator-result {
+    flex: 1;
+    background-color: var(--background-alt);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+  }
+  
+  .result-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .result-body {
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .result-amount {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .result-disclaimer {
+    color: var(--text-light);
+    font-size: 0.9rem;
+  }
+  
+  .result-footer {
+    padding: 0 30px 30px;
+  }
+  
+  /* FAQ Section */
+  .faq-section {
+    padding: 80px 0;
+    background-color: var(--background-alt);
+  }
+  
+  .faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .faq-item {
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  
+  .faq-question {
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .faq-question h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .faq-icon {
+    transition: var(--transition);
+  }
+  
+  .faq-item.active .faq-icon {
+    transform: rotate(180deg);
+  }
+  
+  .faq-answer {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+  }
+  
+  .faq-item.active .faq-answer {
+    padding: 0 20px 20px;
+    max-height: 1000px;
+  }
+  
+  .faq-answer ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 992px) {
+    .overview-content,
+    .country-content,
+    .calculator-wrapper {
+      flex-direction: column;
+    }
+  
+    .country-image {
+      order: -1;
+    }
+  
+    .tab-buttons {
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .page-title {
+      font-size: 2.5rem;
+    }
+  
+    .overview-stats {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .country-cta {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .page-title {
+      font-size: 2rem;
+    }
+  
+    .country-title {
+      font-size: 1.5rem;
+    }
+  }
+  
+  
